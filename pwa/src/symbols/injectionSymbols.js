@@ -1,0 +1,1 @@
+export const pocketBaseSymbol= Symbol("PBClient");

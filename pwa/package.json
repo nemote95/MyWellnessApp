@@ -1,0 +1,28 @@
+{
+  "name": "wellness",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generate-pwa-assets": "pwa-assets-generator"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.11.0",
+    "pinia": "^2.1.7",
+    "pocketbase": "^0.21.4",
+    "vee-validate": "^4.13.2",
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@vite-pwa/assets-generator": "^0.2.4",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "pwa-asset-generator": "^6.3.1",
+    "vite": "^5.3.1",
+    "vite-plugin-pwa": "^0.20.1"
+  }
+}
