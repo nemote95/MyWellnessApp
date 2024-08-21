@@ -28,6 +28,17 @@ const router = createRouter({
       path: '/plans/:id',
       name: 'plan',
       component: () => import('../views/PlanView.vue')
+    },
+    {
+      path: '/days/:id',
+      name: 'day',
+      component: () => import('../views/DayView.vue')
+    },
+
+    {
+      path: '/exercises/:id',
+      name: 'exercise',
+      component: () => import('../views/ExerciseView.vue')
     }
   ]
 })

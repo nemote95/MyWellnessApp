@@ -9,8 +9,6 @@ const $pb = inject(pocketBaseSymbol);
 $pb.autoCancellation(false);
 
 const user = useUserStore()
-console.log(user)
-
 
 const user_plans = reactive({});
 
