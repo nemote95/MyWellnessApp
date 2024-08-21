@@ -26,7 +26,7 @@ onMounted(async () => {
   <h1> Hi {{ user.username }} </h1>
 
   <ul v-for="plan in user_plans">
-    <li>{{ plan.name }} - {{ plan.note }}</li>
+    <li><RouterLink v-bind:to="{ name: 'plan', params: { id: plan.id }}">{{ plan.name }} - {{ plan.note }} </RouterLink> </li>
   </ul>
 
 </template>

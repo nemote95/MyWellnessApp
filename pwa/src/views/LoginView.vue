@@ -25,12 +25,12 @@
         const user = useUserStore()
         const { username, password } = values;
 
-        const userData = $pb?.collection("users").authWithPassword(username, password).then(
+        const userData = then(
             (userData) => {
                 console.log(userData);
                 user.userID = userData.record.id;
                 user.username = userData.record.username;
-                router.push(user.returnUrl || '/monitor');
+                router.push(user.returnUrl || '/');
             }
         ).catch(error => setErrors({ apiError: error }));
     }

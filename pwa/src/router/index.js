@@ -23,6 +23,12 @@ const router = createRouter({
       name: 'login',
       component: () => import('../views/LoginView.vue')
     }
+    ,
+    {
+      path: '/plans/:id',
+      name: 'plan',
+      component: () => import('../views/PlanView.vue')
+    }
   ]
 })
 
@@ -33,8 +39,8 @@ router.beforeEach(async (to) => {
   const user = useUserStore();
 
   if (authRequired && !user.logged_in) {
-      user.returnUrl = to.fullPath;
-      return '/login';
+    user.returnUrl = to.fullPath;
+    return '/login';
   }
 })
 
